@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<div class="tm-row">
+    <div class="tm-col-left"></div>
+    <main class="tm-col-right tm-contact-main">
+        <section class="tm-content tm-contact">
+            <div class="orm-group mb-4">
+                <a href="" class="dec">Вы вошли как пользователь {{ enter }}</a>
+            </div>
+            <a href="logout" class="btn btn-primary">Выйти из аккаунта</a>
+        </section>
+    </main>
+</div>
+{% endblock %}
+
+<div class="tm-row">
+    <div class="tm-col-left"></div>
+    <main class="tm-col-right">
+        <section class="tm-content">
+            <div class="media my-3 mb-1">
+                <div class="media-body tm-service-text">
+                <a href="" class="dec">Вы вошли как пользователь {{ enter }}</a>
+                </div>
+            </div>
+            <a href="/add_article" class="btn btn-primary">Выйти из аккаунта/a>
+        </section>
+    </main>
+</div>

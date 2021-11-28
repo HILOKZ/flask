@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<div class="tm-row">
+    <div class="tm-col-left"></div>
+    <main class="tm-col-right">
+        <section class="tm-content">
+            <div class="media my-3 mb-1">
+                <div class="media-body tm-service-text">
+                    {% for p in posts %}
+                        <h2 class="mb-4 tm-content-title"><a href="{{ url_for('showPost', id_post=p.id)}}">{{p.title }}</a></h2>
+                        <p>{{ p.text[:200] | safe }} ... </p>
+                    {% endfor %}
+                </div>
+            </div>
+            <a href="/add_article" class="btn btn-primary">Добавить статью</a>
+        </section>
+    </main>
+</div>
+{% endblock %}
